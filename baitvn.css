@@ -1,0 +1,98 @@
+/* Reset padding, margin, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+.fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.red{
+    border:none;
+    background-color: red;
+    display:flex;
+    justify-content: center;
+}
+.brow{
+    border:1px solid rgb(43, 63, 59);
+    background-color: rgb(43, 63, 59);
+    display:flex;
+    justify-content: center;
+    max-width:1000px;
+}
+.menu {
+    background-color: #666; /* Màu nền của thanh menu */
+    padding-left: 30px ;
+    padding-right: 30px;
+    max-width:1200px;
+    margin-top: 0px ;
+    margin-bottom: 0px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.menu ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu ul li {
+    position: relative;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+.menu ul li a:hover {
+    background-color: #444;
+}
+
+.menu ul li .menu2 {
+    display: none;
+    position: absolute;
+    background-color: rgba(128, 128, 128, 0.9); /* Màu nền của danh sách con */
+    top: 100%;
+    left: 0;
+    padding: 10px;
+}
+
+.menu ul li:hover .menu2 {
+    display: block;
+}
+
+.menu ul li .menu2 li {
+    margin: 5px 0;
+}
+
+.menu ul li .menu2 li a {
+    color: white;
+    padding: 10px;
+    display: block;
+    width: 120px;
+}
+
+.menu ul li .menu2 li a:hover {
+    background-color: #444;
+}
+p{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-indent: 20px;
+}
+.p1{
+    padding-top: 60px;
+}
